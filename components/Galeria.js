@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Popover } from '@headlessui/react'
+import { AiFillCloseCircle } from 'react-icons/ai'
 
 function Galeria() {
 
@@ -38,19 +39,25 @@ function Galeria() {
   //260x180
 
   return(
-    <div className='mx-20 md:mx-40 flex flex-row gap-1 relative'>
-      <div className=''>
+    <div className='mx-20 md:mx-40 bg-slate-800 py-8 px-3 relative rounded-lg'>
+      <h1 className='text-white text-center text-3xl mb-8'>Imagens</h1>
+      <div className='flex gap-2'>
         {images.map((image => (
-          <Popover key='' className="">
+          <Popover key={image.path} className=''>
           <Popover.Button>
-            <div className='flex flex-row'>
+            <div>
               <Image className='rounded-md object-cover hover:scale-110 transition-transform' src={image.path} width={260} height={180} alt="Imagem Galeria" />
             </div>
           </Popover.Button>
 
-          <Popover.Panel className="absolute z-10">
-            <div className='bg-green-500 p-4 absolute overflow-auto w-full z-50'>
-              <Image className='rounded-md object-cover hover:scale-110 transition-transform absolute' src={image.path} width={260} height={180} alt="Imagem Galeria" />
+          <Popover.Panel className=" absolute right-0 left-0 -top-28 z-10 w-full h-full">
+            <div className='bg-[#000000bb] rounded-lg p-4 overflow-auto w-full z-50 flex justify-center relative'>
+              <Image className='absolute' src={image.path} width={image.width} height={image.height} alt="Imagem Galeria" />
+              <div className='flex text-white items-start text-right'>
+                <Popover.Button className='absolute top-0 right-0 m-4'>
+                  <AiFillCloseCircle className='w-8 h-8' />
+                </Popover.Button>
+              </div>
             </div>
           </Popover.Panel>
         </Popover>
