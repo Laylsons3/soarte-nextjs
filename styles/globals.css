@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-emerald-200;
+}
+
+.Splash {
+  font-family: 'Splash';
+}
+
+.LilitaOne {
+  font-family: 'Lilita One';
+}
+
+.Montserrat {
+  font-family: 'Montserrat';
+}
+
+.Poppins {
+  font-family: 'Poppins';
+}
