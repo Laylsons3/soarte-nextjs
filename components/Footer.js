@@ -10,23 +10,25 @@ import {
 
 function Footer() {
   return(
-    <div>
-      <div className="px-20 md:px-40 pb-2 pt-10 bg-emerald-900 text-white">
-        <div className="flex justify-between">
-          <div className="flex flex-row">
-          <Image alt="Logo" src="/images/logo-soarte.svg" width={100} height={100} />
-          <div className="flex flex-col leading-5">
-            <div className="ml-4 mb-1 font-medium Poppins">Soarte - Sociedade Artística</div>
-            <div className="ml-4 mb-1 hover:underline">soartemusica@gmail.com</div>
-            <div className="ml-4 mb-1 hover:underline flex items-center">
-              <BsWhatsapp className='w-4 h-4 mr-1'/>
-              <Link href="https://api.whatsapp.com/send?phone=85991292607">(85) 9 9129-2607</Link>
-              </div>
-            <p className=" ml-4 text-sm w-64 leading-4">Rua Antônio Luís de Sousa, 560. Monguba Pacatuba/CE CEP: 61805-770</p>
+    <section id="component">
+      <div className="Component pb-2 pt-10 bg-emerald-900 text-white">
+        <div className="flex flex-col-reverse md:flex-row justify-between">
+          <div className="flex justify-center">
+            <div className="flex my-auto w-[100px] h-[100px] ml-2">
+              <Image alt="Logo" src="/images/logo-soarte.svg" width={100} height={100} />
+            </div>
+            <div className="flex flex-col leading-5">
+              <div className="mx-2 mb-1 font-medium Poppins">Soarte - Sociedade Artística</div>
+              <div className="mx-2 mb-1 hover:underline">soartemusica@gmail.com</div>
+              <div className="mx-2 mb-1 hover:underline flex items-center">
+                <BsWhatsapp className='w-4 h-4 mr-1'/>
+                <Link href="https://api.whatsapp.com/send?phone=85991292607">(85) 9 9129-2607</Link>
+                </div>
+              <p className="mx-2 text-sm w-64 leading-4">Rua Antônio Luís de Sousa, 560. Monguba Pacatuba/CE CEP: 61805-770</p>
 
+            </div>
           </div>
-          </div>
-          <div className="flex flex-row gap-4 ">
+          <div className="flex flex-row gap-4 justify-center mb-8 md:mb-0 ">
           <div>
               <Link href="https://instagram.com/soartepacatuba">
                 <a rel="nofollow" target="_blank">
@@ -65,14 +67,14 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center my-10">
-          <div>
+        <div className="flex justify-center mt-10 mb-5">
+          <div className="text-[10pt] text-center Montserrat">
            &copy; 2022 | Soarte - Sociedade Artística | Todos os direitos reservados
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -39,7 +39,7 @@ function Galeria() {
   //260x180
 
   return(
-    <div className='mx-20 md:mx-40 bg-slate-800 py-8 px-3 relative rounded-lg'>
+    <div className='mx-10 md:mx-40 bg-slate-800 py-8 px-3 relative rounded-lg'>
       <h1 className='text-white text-center text-3xl mb-8'>Imagens</h1>
       <div className='flex gap-2'>
         {images.map((image => (
