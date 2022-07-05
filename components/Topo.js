@@ -11,17 +11,11 @@ function Topo() {
 
         <meta property="og:title" content="Soarte"/>
         <meta property="og:type" content="Música, arte e cultura."/>
-        <meta property="og:url" content="http://soarte-org.vercel.app"/>
-        <meta property="og:image" content="/images/capa.jpg"/>
+        <meta property="og:url" content="https://soarte-org.vercel.app"/>
+        <meta property="og:image" content="https://soarte-org.vercel.app/images/capa.jpgg"/>
         <meta property="og:site_name" content="Soarte - Sociedade Artística"/>
         <meta property="og:description"
               content="Descrição de teste."/>
-
-        {/* <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-        <meta property="og:type"               content="article" />
-        <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-        <meta property="og:description"        content="How much does culture influence creative thinking?" />
-        <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" /> */}
 
         <link rel="icon" type="image/x-icon" href="logo-soarte.ico"></link>
       </Head>
