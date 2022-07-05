@@ -12,9 +12,9 @@ function Topo() {
         <meta property="og:title" content="Soarte"/>
         <meta property="og:type" content="Música, arte e cultura."/>
         <meta property="og:url" content="http://soarte-org.vercel.app"/>
-        <meta property="og:image" content="/images/logo-soarte.svg"/>
+        <meta property="og:image" content="/images/capa.jpg"/>
         <meta property="og:site_name" content="Soarte - Sociedade Artística"/>
-        <meta property="og:description" 
+        <meta property="og:description"
               content="Descrição de teste."/>
 
         {/* <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />

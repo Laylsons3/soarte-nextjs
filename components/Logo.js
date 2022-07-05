@@ -9,7 +9,7 @@ const SvgComponent = (props) => (
     <defs>
       <style>{".cls-1{fill:#10b981}"}</style>
     </defs>
-    <title>{"LOGO SOARTE SVGAtivo 2"}</title>
+    <title>{"Soarte - Sociedade Artística"}</title>
     <g id="Camada_2" data-name="Camada 2">
       <g id="Camada_1-2" data-name="Camada 1">
         <path
