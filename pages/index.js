@@ -1,25 +1,23 @@
-import Videos from '../components/Videos'
-import Section1 from '../components/Section1'
-import Section2 from '../components/Section2'
-import Section3 from '../components/Section3'
 import Topo from '../components/Topo'
-import Galeria from '../components/Galeria'
-import Footer from '../components/Footer'
+import Capa from '../components/Capa'
+import Frase from '../components/Frase'
 import QuemSomos from '../components/QuemSomos'
+import Cursos from '../components/Cursos'
+import Galeria from '../components/Galeria'
+import Videos from '../components/Videos'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <div>
-      <Topo descricao="Soarte - Centro Cultural Sons da Aratanha" />
-      <Section1 />
-      <Section2 />
+      <Topo />
+      <Capa />
+      <Frase />
       <QuemSomos />
-      <Section3 />
+      <Cursos />
       <Galeria />
       <Videos />
       <Footer />
-
     </div>
   )
 }
-

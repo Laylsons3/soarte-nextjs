@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-emerald-200 min-w-[375px];
+  @apply bg-emerald-100 min-w-[375px];
 }
 
 .TimesNewRoman {

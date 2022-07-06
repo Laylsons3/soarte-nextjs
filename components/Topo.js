@@ -27,7 +27,7 @@ function Topo(props) {
 
         <link rel="icon" type="image/x-icon" href="logo-soarte.ico"></link>
       </Head>
-      <div className="flex justify-between px-2 md:px-40 bg-white h-20">
+      <div className="flex justify-between px-4 md:px-40 bg-white h-20">
         <div className="flex items-center">
           <div className="h-16 w-16 mr-2">
             <Image src="/images/logo-soarte.svg" width={64} height={64} alt="Logo Soarte" />

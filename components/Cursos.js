@@ -1,4 +1,4 @@
-import { 
+import {
   GiMusicalNotes,
   GiFlute,
   GiClarinet,
@@ -9,9 +9,9 @@ import {
 import { FaGuitar } from 'react-icons/fa'
 import Link from 'next/link';
 
-function Section3() {
+function Cursos() {
   return(
-    <section id="Component" className='bg-blue-500'>
+    <section id="Component" className=''>
       <div className='Component block mt-8 mb-14'>
         <div className="flex justify-center">
           <div className='flex items-center'>
@@ -24,7 +24,7 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <GiFlute className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
@@ -37,7 +37,7 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <GiClarinet className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
@@ -50,7 +50,7 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <FaGuitar className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
@@ -63,7 +63,7 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <GiTrumpet className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
@@ -76,7 +76,7 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <GiMusicalKeyboard className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
@@ -89,13 +89,13 @@ function Section3() {
             <Link href="/">
               <a className='relative'>
                 <div className='DivIconCurso drop-shadow-sm flex justify-center items-center rounded-full bg-emerald-500 hover:scale-105 hover:bg-emerald-400 transition-all'>
-                  <div className='bg-emerald-400 w-12 h-12 absolute rounded-full blur -z-10' />
+                  <div className='bg-emerald-400 group-hover:bg-emerald-300 w-12 h-12 absolute rounded-full blur -z-10' />
                   <GiSaxophone className='w-full h-full p-3'/>
                 </div>
                 <div className='flex justify-center'>
                   <div className='text-[9pt] text-center flex opacity-0 group-hover:opacity-100 bg-white px-1 rounded-xl absolute -bottom-6'>Saxofone</div>
                 </div>
-                
+
               </a>
             </Link>
           </div>
@@ -105,9 +105,9 @@ function Section3() {
 
         </div>
       </div>
-      
+
     </section>
   )
 }
 
-export default Section3;
+export default Cursos;

@@ -1,6 +1,6 @@
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri'
 
-function Section2() {
+function Frase() {
   return(
     <section id="Component" className=''>
       <div className="Component mt-4 flex flex-col gap-2">
@@ -18,4 +18,4 @@ function Section2() {
   )
 }
 
-export default Section2;
+export default Frase;

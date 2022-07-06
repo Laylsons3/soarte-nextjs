@@ -1,14 +1,12 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-function Section1() {
+function Capa() {
   return(
     <section id="Component">
-      <div className='h-96 overflow-hidden bg-capa bg-no-repeat flex'>
+      <div className='h-[400px] overflow-hidden bg-capa bg-cover bg-no-repeat flex p-8 md:p-0'>
         <div className='Component flex flex-col mt-8'>
           <h1
-          className='text-white Poppins mt-8 pl-4 font-bold
-          text-3xl md:text-5xl md:max-w-[760px] leading-relaxed
+          className='text-white Poppins font-bold leading-relaxed text-3xl md:text-5xl max-w-[500px] md:max-w-[700px] opacity-60 md:opacity-100
           '>
             HÁ 12 ANOS TRANSFORMANDO VIDAS ATRAVÉS DA ARTE.</h1>
           <div className='flex'>
@@ -24,4 +22,4 @@ function Section1() {
   )
 }
 
-export default Section1;
+export default Capa;
