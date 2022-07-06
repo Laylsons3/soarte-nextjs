@@ -10,12 +10,12 @@ import QuemSomos from '../components/QuemSomos'
 export default function Home() {
   return (
     <div>
-      <Topo />
+      <Topo descricao="Soarte - Centro Cultural Sons da Aratanha" />
       <Section1 />
-      <QuemSomos />
       <Section2 />
-      <Galeria />
+      <QuemSomos />
       <Section3 />
+      <Galeria />
       <Videos />
       <Footer />
 

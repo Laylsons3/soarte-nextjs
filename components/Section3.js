@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 function Section3() {
   return(
-    <section id="Component">
+    <section id="Component" className='bg-blue-500'>
       <div className='Component block mt-8 mb-14'>
         <div className="flex justify-center">
           <div className='flex items-center'>

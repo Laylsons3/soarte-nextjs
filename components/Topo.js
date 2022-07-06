@@ -1,33 +1,48 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Logo from './Logo';
+import Image from 'next/image';
 
-function Topo() {
+function Topo(props) {
+
+  const descricao = 'Soarte - Centro Cultural Sons da Aratanha';
+
   return(
-    <div>
-      <Head>
-        <title>Soarte</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <section id="Component">
+      <Head className="Component">
+        <title>Soarte - Sociedade Artística</title>
+        <meta name="title" content="Soarte - Sociedade Artística" />
+        <meta name="description" content={ props.descricao || descricao} />
 
-        <meta property="og:title" content="Soarte"/>
-        <meta property="og:type" content="Música, arte e cultura."/>
-        <meta property="og:url" content="https://soarte-org.vercel.app"/>
-        <meta property="og:image" content="https://soarte-org.vercel.app/images/capa.jpg"/>
-        <meta property="og:site_name" content="Soarte - Sociedade Artística"/>
-        <meta property="og:description"
-              content="Descrição de teste."/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://soarte-org.vercel.app/" />
+        <meta property="og:title" content="Soarte - Sociedade Artística" />
+        <meta property="og:description" content={ props.descricao || descricao} />
+        <meta property="og:image" content="https://soarte-org.vercel.app/images/capa.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://soarte-org.vercel.app/" />
+        <meta property="twitter:title" content="Soarte - Sociedade Artística" />
+        <meta property="twitter:description" content={ props.descricao || descricao} />
+        <meta property="twitter:image" content="https://soarte-org.vercel.app/images/capa.jpg" />
 
         <link rel="icon" type="image/x-icon" href="logo-soarte.ico"></link>
       </Head>
-      <div className="flex justify-between bg-white h-20">
-        <div className="ml-20 md:ml-40 flex items-center">
-          <Logo className="h-16 w-16" />
-          <h1 className='text-5xl ml-2 Poppins text-emerald-500 font-bold'>Soarte</h1>
+      <div className="flex justify-between px-2 md:px-40 bg-white h-20">
+        <div className="flex items-center">
+          <div className="h-16 w-16 mr-2">
+            <Image src="/images/logo-soarte.svg" width={64} height={64} alt="Logo Soarte" />
           </div>
-        <div className="mr-20 md:mr-40 font-bold flex items-center"><Link href="/">
-          <a className='bg-emerald-500 hover:bg-emerald-400 hover:drop-shadow transition-colors text-white py-2 px-4 rounded'>Doar</a></Link></div>
+          <h1 className='text-5xl Poppins text-emerald-500 font-bold'>Soarte</h1>
+        </div>
+        <div className="font-bold flex items-center">
+          <Link href="/#">
+            <a className='bg-emerald-500 hover:bg-emerald-400 hover:drop-shadow transition-colors text-white py-2 px-4 rounded'>
+              Doar
+            </a>
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

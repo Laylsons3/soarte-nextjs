@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'capa': "url('/images/capa.jpg')",
+        'quem-somos': "url('/images/bg-quem-somos.png')",
       }
     },
   },

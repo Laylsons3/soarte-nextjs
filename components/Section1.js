@@ -4,10 +4,12 @@ import Link from 'next/link';
 function Section1() {
   return(
     <section id="Component">
-      <div className='h-96 overflow-hidden bg-capa flex'>
-        {/* <Image alt="Imagem ilustrativa" className='-z-10' src="/images/capa.jpg" width={1440} height={642} /> */}
+      <div className='h-96 overflow-hidden bg-capa bg-no-repeat flex'>
         <div className='Component flex flex-col mt-8'>
-          <h1 className='text-5xl leading-relaxed text-white Poppins font-bold w-[800px]'>
+          <h1
+          className='text-white Poppins mt-8 pl-4 font-bold
+          text-3xl md:text-5xl md:max-w-[760px] leading-relaxed
+          '>
             HÁ 12 ANOS TRANSFORMANDO VIDAS ATRAVÉS DA ARTE.</h1>
           <div className='flex'>
             {/* <Link href="#matricula">

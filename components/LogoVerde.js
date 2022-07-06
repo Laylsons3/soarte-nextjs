@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const SvgComponent = (props) => (
+const LogoVerde = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 700.46 578.15"
@@ -9,7 +9,7 @@ const SvgComponent = (props) => (
     <defs>
       <style>{".cls-1{fill:#10b981}"}</style>
     </defs>
-    <title>{"Soarte - Sociedade Artística"}</title>
+    <title>{"Soarte - Sociedade Artística_"}</title>
     <g id="Camada_2" data-name="Camada 2">
       <g id="Camada_1-2" data-name="Camada 1">
         <path
@@ -21,4 +21,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export default SvgComponent
+export default LogoVerde;
