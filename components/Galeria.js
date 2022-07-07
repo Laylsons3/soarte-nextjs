@@ -36,8 +36,6 @@ function Galeria() {
     },
   ]
 
-  //260x180
-
   return(
     <section id="Component">
       <div className='Component'>
