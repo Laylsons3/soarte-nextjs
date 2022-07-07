@@ -15,7 +15,7 @@ function Footer() {
         <div className="flex flex-col-reverse md:flex-row justify-between">
           <div className="flex justify-center">
             <div className="flex my-auto w-[100px] h-[100px] ml-2">
-              <Image alt="Logo" src="/images/logo-soarte.svg" width={100} height={100} />
+              <Image alt="Logo" src="/images/logo.svg" width={100} height={100} />
             </div>
             <div className="flex flex-col leading-5">
               <div className="mx-2 mb-1 font-medium Poppins">Soarte - Sociedade Artística</div>

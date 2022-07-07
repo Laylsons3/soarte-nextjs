@@ -123,6 +123,7 @@ export default function Matricula() {
 
 
           </div>
+            <hr />
             <div id="form-section" className=''>
               O envio deste formulário implica a nossa
               <Link href="/#privacidade">
