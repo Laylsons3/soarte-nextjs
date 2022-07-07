@@ -30,7 +30,7 @@ function Topo(props) {
       <div className="flex justify-between px-4 md:px-40 bg-white h-20">
         <div className="flex items-center">
           <div className="h-16 w-16 mr-2">
-            <Image src="/images/logo-soarte.svg" width={64} height={64} alt="Logo Soarte" />
+            <Image src="/images/logo.svg" width={64} height={64} alt="Logo Soarte" />
           </div>
           <h1 className='text-5xl Poppins text-emerald-500 font-bold'>Soarte</h1>
         </div>
