@@ -73,8 +73,6 @@ export default function Painel() {
         })
     }
 
-    const imgPaths = fireData.map(data=> data.image.replace(/^data:image\/jpeg;base64,/, ''))
-
     const [pathAvatar, setPathAvatar] = useState('')
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -100,7 +98,8 @@ export default function Painel() {
                         </div>
                         <div className="text-white font-bold text-4xl ml-2">Painel</div>
                     </div>
-                    <div className="text-white flex flex-col items-center justify-center">
+                    <div className="text-white flex flex-col items-center justify-center my-1">
+                        <div className="w-8 h-8 mt-1"><Image className="object-cover rounded-full" alt="Avatar" width={150} height={150} src={pathAvatar} /></div>
                         <div>{name}</div>
                         <div>{email}</div>
                     </div>
@@ -132,12 +131,10 @@ export default function Painel() {
                     
                 </div>
 
-                <div className="flex p-2 h-20 bg-teal-700">
+                <div className="flex p-2 bg-teal-700">
                     {fireData.map(data => (
-                        <div key={data.id}>
-                            {/* <Image alt="Imagem" width={150} height={150} data={imgPaths} /> */}
-                            {/* <img src={imgPaths} /> */}
-                            <p>{data.image}</p>
+                        <div key={data.id} className="m-1">
+                            <Image className="object-cover" alt="Imagem" width={150} height={150} src={data.image} />
                         </div>
                     ))}                  
                 </div>
