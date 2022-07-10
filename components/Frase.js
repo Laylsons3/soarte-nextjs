@@ -4,8 +4,8 @@ function Frase() {
   return(
     <section id="Component" className=''>
       <div className="Component mt-4 flex flex-col gap-2">
-        <div className="block relative p-6 text-zinc-900 Poppins">
-          <RiDoubleQuotesL className='h-16 w-16 absolute top-0 left-0 inline-block' />
+        <div className="block relative text-zinc-900 Poppins bg-emerald-50 p-8 rounded-lg shadow-xl">
+          <RiDoubleQuotesL className='h-16 w-16 absolute top-0 left-6 inline-block' />
           <h2 className="text-xl md:text-3xl inline">
             <span className='px-6' /> O homem que não tem a música dentro de si e que não se emociona com
             um concerto de doces acordes é capaz de traições, de conjuras e de rapinas.

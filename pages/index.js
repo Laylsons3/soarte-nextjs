@@ -15,7 +15,7 @@ export default function Home() {
       <Frase />
       <QuemSomos />
       <Cursos />
-      <Galeria />
+      {/* <Galeria /> */}
       <Videos />
       <Footer />
     </div>

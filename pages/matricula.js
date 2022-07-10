@@ -6,139 +6,91 @@ export default function Matricula() {
   return(
     <div>
       <Topo />
-      <div className="flex justify-center bg-teal-700 text-teal-50 p-4">
+      <div className="flex justify-center">
 
       <div>
 
       </div>
     </div>
       <div className="mx-10 mt-5 flex Drop1 justify-center">
-        <div className="w-[740px] bg-white p-8 mb-8">
-          <div className="flex flex-col Poppins border text-emerald-500 border-black rounded p-2">
-            <div className="font-bold flex flex-row justify-center items-center gap-2">
-            <div className="flex items-center">
-              <Image src="/images/logo.svg" alt="Logo" width={60} height={60} />
-            </div>
-              <h1 className="text-6xl">Soarte</h1>
-            </div>
-            <h3 className='text-2xl text-center font-medium'>Centro Cultural Sons da Aratanha</h3>
+        <div className="max-w-[740px] bg-gray-50 text-zinc-800 p-8 mb-8">
+          <div className='Poppins flex items-center p-1 pl-2 gap-4'>
+            <Image src="/images/logo.svg" width={80} height={80} alt="Image logo" />
+          <div className='flex flex-col'>
+          <h1 className="font-bold text-5xl">SOARTE</h1>
+          <h1 className="font-bold text-2xl">CENTRO CULTURAL SONS DA ARATANHA</h1>
           </div>
-          <h1 className="text-center font-bold my-2 text-xl text-zinc-800">MATRÍCULA 2022.2</h1>
-          <form id="form-matricula" className="flex flex-col gap-2">
-          <div id="form-section" className="flex flex-col gap-2">
-            <div className="flex gap-2 w-full">
-              <label>Nome completo:</label>
-              <input className="flex-1 pl-1 border-2" />
-            </div>
-            <div className="flex gap-2 w-full">
-              <label>CEP:</label>
-              <input className="pl-1" size={8} />
-              <label>Rua:</label>
-              <input className="flex-1 pl-1" />
-              <label>Nº:</label>
-              <input className="pl-1" size={4} />
-            </div>
-            <div className="flex gap-2 w-full">
-              <label>Bairro:</label>
-              <input className="flex-1 pl-1" size={9} />
-              <label>Cidade:</label>
-              <input className="flex-1 pl-1" />
-              <label>Estado:</label>
-              <input className="pl-1" size={7} />
-            </div>
-            <div>
-              <div className="flex gap-2 w-full">
-                <label>CPF:</label>
-                <input className="flex-1 pl-1" size={6} />
-                <label>RG:</label>
-                <input className="flex-1 pl-1" size={6} />
-                <label>Data de Nasc.:</label>
-                <input className="pl-1" size={12} type="date" />
+
+
+          </div>
+          <h1 className="text-center my-5 bg-gray-200 font-bold text-lg">FICHA DE INSCRIÇÃO SEMESTRE 2022.2 SOARTE</h1>
+
+          <form>
+              <div className="grid gap-6 mb-6 lg:grid-cols-4">
+                  <div className='col-span-4'>
+                      <label forHtml="first_name" className="labelForm">
+                        Nome completo
+                      </label>
+                      <input type="text" id="first_name" className="inputForm" required=""/>
+                  </div>
+
+                  <div className='col-span-1'>
+                      <label forHtml="last_name" className="labelForm">
+                        CEP
+                      </label>
+                      <input type="text" id="last_name" className="inputForm" required=""/>
+                  </div>
+                  <div className='col-span-3'>
+                      <label forHtml="last_name" className="labelForm">
+                        Rua
+                      </label>
+                      <input type="text" id="last_name" className="inputForm" required=""/>
+                  </div>
+                  <div className='col-span-1'>
+                      <label forHtml="company" className="labelForm">
+                        Número
+                      </label>
+                      <input type="text" id="company" className="inputForm" required=""/>
+                  </div>
+                  <div className='col-span-1'>
+                      <label forHtml="phone" className="labelForm">
+                        Complemento
+                      </label>
+                      <input type="tel" id="phone" className="inputForm" required=""/>
+                  </div>
+
+                  <div className='col-span-2'>
+                      <label forHtml="last_name" className="labelForm">
+                        Bairro
+                      </label>
+                      <input type="text" id="last_name" className="inputForm" required=""/>
+                  </div>
+                  <div className='col-span-1'>
+                      <label forHtml="company" className="labelForm">
+                        Cidade
+                      </label>
+                      <input type="text" id="company" className="inputForm" required=""/>
+                  </div>
+                  <div className='col-span-1'>
+                      <label forHtml="phone" className="labelForm">
+                        Estado
+                      </label>
+                      <input type="tel" id="phone" className="inputForm" required=""/>
+                  </div>
+
               </div>
-            </div>
-            <div>
-              <div className="flex gap-2 w-full">
-                <label>Escolaridade:</label>
-                <select>
-                  <option></option>
-                  <option>Infantil</option>
-                  <option>Fundamental</option>
-                  <option>Médio incompleto</option>
-                  <option>Médio completo</option>
-                  <option>Superior incompleto</option>
-                  <option>Superior completo</option>
-                  <option>Pós graduação</option>
-                </select>
-                <label>Instituição:</label>
-                <input className="flex-1 pl-1 uppercase" size={6} />
+              <div className="flex items-start mb-6">
+                  <div className="flex items-center h-5">
+                  <input id="remember" type="checkbox" value="" className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required=""/>
+                  </div>
+                  <label forHtml="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+                    Eu aceito os <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">
+                    termos e condições</a>.</label>
               </div>
-            </div>
-          </div>
-          <hr />
-          <div className="flex gap-2 w-full ">
-            <div id="form-section" className="flex flex-col">
-              <div>Oficina:</div>
-            <label>
-              <input className="mr-1" type="checkbox" />
-              Flauta Doce
-            </label>
-            <label>
-              <input className="mr-1" type="checkbox" />
-              Clarinete
-            </label>
-            <label>
-              <input className="mr-1" type="checkbox" />
-              Violão
-            </label>
-            <label>
-              <input className="mr-1" type="checkbox" />
-              Trompete
-            </label>
-            <label>
-              <input className="mr-1" type="checkbox" />
-              Teclado
-            </label>
-
-
-            </div>
-            <div className="flex flex-col">
-            <div id="form-section" className="">Já estudou na Soarte?
-              <div className="flex justify-center gap-2">
-                  <label>
-                    <input className="mr-1" name="aluno-novo" type="radio" />
-                    Sim
-                    </label>
-                    <label>
-                    <input className="mr-1" name="aluno-novo" type="radio" />
-                    Não
-                    </label>
-                </div>
-            </div>
-
-
-
-
-
-            </div>
-
-
-          </div>
-            <hr />
-            <div id="form-section" className=''>
-              O envio deste formulário implica a nossa
-              <Link href="/#privacidade">
-                <a className='hover:underline px-1 font-medium'>
-                  Política de privacidade.
-                </a>
-              </Link>
-            </div>
-
-            <div className='flex justify-center mt-8'>
-              <button className='bg-emerald-400 px-8 py-1 font-medium rounded'>Enviar</button>
-            </div>
-
-
+              <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Enviar</button>
           </form>
+
         </div>
 
       </div>

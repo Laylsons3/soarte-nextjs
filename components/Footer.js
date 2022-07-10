@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return(
-    <section id="component">
+    <section id="contato">
       <div className="Component pb-2 pt-10 bg-emerald-900 text-white">
         <div className="flex flex-col-reverse md:flex-row justify-between">
           <div className="flex justify-center">

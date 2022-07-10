@@ -51,18 +51,12 @@ section .Component2 {
   @apply w-14 md:w-20 h-14 md:h-20
 }
 
-#form-matricula label {
-  @apply font-medium
+.labelForm {
+  @apply block mb-2 text-sm font-medium text-gray-900
 }
 
-#form-matricula input {
-  @apply rounded
+.inputForm {
+  @apply bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
 }
-
-#form-matricula #form-section {
-  @apply bg-emerald-100 border border-black rounded p-2 
-}
-
-
 
 

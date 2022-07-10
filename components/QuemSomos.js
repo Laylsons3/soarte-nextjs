@@ -2,8 +2,8 @@ import LogoBranco from './LogoBranco';
 
 function QuemSomos() {
   return(
-    <section id="Component" className=''>
-      <div className="Component2 bg-quem-somos bg-no-repeat my-8 block py-8">
+    <section id="quem-somos" className=''>
+      <div className="Component2 bg-quem-somos bg-no-repeat my-4 block py-8">
         <div className="Poppins bg-[#ffffff70] my-0 rounded-lg flex flex-col max-w-[720px] p-4">
           <h1 className="text-4xl md:text-6xl font-black mb-2 opacity-50">QUEM SOMOS</h1>
           <p className="text-justify text-xs md:text-sm mb-2">

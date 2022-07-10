@@ -35,12 +35,20 @@ function Topo(props) {
           <h1 className='text-5xl Poppins text-emerald-500 font-bold'>Soarte</h1>
         </div>
         <div className="font-bold flex items-center">
-          <Link href="/#">
-            <a className='bg-emerald-500 hover:bg-emerald-400 hover:drop-shadow transition-colors text-white py-2 px-4 rounded'>
+          <Link href="https://apoia.se/soarte">
+            <a rel='nofollow' target="_blank" className='bg-emerald-500 hover:bg-emerald-400 hover:drop-shadow transition-colors text-white py-2 px-4 rounded'>
               Doar
             </a>
           </Link>
         </div>
+      </div>
+      <div className='flex gap-5 pb-1 justify-center bg-white font-medium'>
+        <Link href="/"><a className='hover:underline'>inicio</a></Link>
+        <Link href="#galeria"><a className='hover:underline'>galeria</a></Link>
+        <Link href="#cursos"><a className='hover:underline'>cursos</a></Link>
+        <Link href="#quem-somos"><a className='hover:underline'>quem somos</a></Link>
+        <Link href="#contato"><a className='hover:underline'>contato</a></Link>
+
       </div>
     </section>
   )

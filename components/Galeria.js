@@ -37,7 +37,7 @@ function Galeria() {
   ]
 
   return(
-    <section id="Component">
+    <section id="galeria">
       <div className='Component'>
         <div className='bg-slate-800 py-8 px-3 relative rounded-lg'>
           <h1 className='text-white text-center text-3xl mb-8'>Imagens</h1>
