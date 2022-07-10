@@ -7,6 +7,7 @@ import {
   signInWithPopup
  } from 'firebase/auth';
 import { useRouter } from 'next/router';
+import { setCookie, destroyCookie, parseCookies } from 'nookies';
 
 export default function LoginAdmin() {
 
@@ -18,20 +19,20 @@ export default function LoginAdmin() {
   const signUpWithGoogle = () => {
     signInWithPopup(auth, googleProvider)
     .then((res) => {
-        sessionStorage.setItem('Token', res.user.accessToken)
-        sessionStorage.setItem('User', res.user.displayName)
-        sessionStorage.setItem('Email', res.user.email)
-        sessionStorage.setItem('Avatar', res.user.photoURL)
+        setCookie(null, 'token', res.user.accessToken, { maxAge: 30 * 24 * 60 * 60 })
+        setCookie(null, 'user', res.user.displayName, { maxAge: 30 * 24 * 60 * 60 })
+        setCookie(null, 'email', res.user.email, { maxAge: 30 * 24 * 60 * 60 })
+        setCookie(null, 'avatar', res.user.photoURL, { maxAge: 30 * 24 * 60 * 60 })
         router.push('/painel')
     })
   }
 
-  useEffect(() => {
-    let token = sessionStorage.getItem('Token')
-    if (token){
-        router.push('/painel')
-    }
-  }, [router])
+  // useEffect(() => {
+  //   let token = parseCookies('token')
+  //   if (token){
+  //       router.push('/painel')
+  //   }
+  // }, [router])
 
   return (
     <div>
