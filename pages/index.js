@@ -190,21 +190,25 @@ export default function Home() {
               Maestro Paulo Ferreira, é um exemplo notável de colaboração e
               expressão musical, composta por alunos, voluntários e professores
               da OSCIP Soarte, localizada no município de Pacatuba, no Ceará.
-              Mestre em música pela renomada UFBA (Universidade Federal da
-              Bahia), o Maestro Paulo Ferreira traz consigo uma expertise
-              valiosa que enriquece a experiência musical da banda. Uma
-              manifestação vibrante da dedicação à música e ao crescimento
-              comunitário, essa banda é uma das várias oficinas enriquecedoras
-              que a OSCIP oferece à comunidade. A diversidade instrumental é o
-              que dá vida à música dos Sons da Aratanha, abrangendo uma ampla
-              gama de categorias sonoras. Madeiras como clarinetes, flautas e
-              saxofones, metais como trompetes e trombones, sopros como
-              bombardinos e tubas, e uma variedade de instrumentos de percussão
-              se unem harmoniosamente para criar uma sinfonia rica e cativante.
-              Essa colaboração musical não apenas proporciona um ambiente
-              educativo enriquecedor, mas também reforça os laços sociais e
-              culturais dentro da comunidade, tornando Sons da Aratanha um
-              exemplo inspirador de como a música pode unir e transformar vidas.
+              Mestrando em Interpretação Musical, pela renomada UFBA
+              (Universidade Federal da Bahia) e com Especialização em
+              Performance Musical nos Alpes no sul da França, o Maestro Paulo
+              Ferreira traz consigo uma expertise valiosa que enriquece a
+              experiência musical da Banda. Uma manifestação vibrante da
+              dedicação à música e ao crescimento comunitário, essa Banda é uma
+              das várias oficinas enriquecedoras que a OSCIP oferece à
+              comunidade. O público atendido é constituído, prioritariamente, de
+              crianças e jovens em situação de vulnerabilidade social. A
+              diversidade instrumental é o que dá vida à música dos Sons da
+              Aratanha, abrangendo uma ampla gama de categorias sonoras.
+              Madeiras como clarinetes, flautas e saxofones, metais como
+              trompetes e trombones, sopros como bombardinos e tubas, e uma
+              variedade de instrumentos de percussão se unem harmoniosamente
+              para criar uma sinfonia rica e cativante. Essa colaboração musical
+              não apenas proporciona um ambiente educativo enriquecedor, mas
+              também reforça os laços sociais e culturais dentro da comunidade,
+              tornando Sons da Aratanha um exemplo inspirador de como a música
+              pode Unir e Transformar Vidas.
             </p>
           </div>
         </div>
