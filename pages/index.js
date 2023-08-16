@@ -101,11 +101,6 @@ export default function Home() {
                       alt="image"
                     />
                   </div>
-                  <div className="flex flex-col justify-between">
-                    <span className="block text-center p-1 rounded">
-                      Textos
-                    </span>
-                  </div>
                 </div>
               ))}
             </div>
@@ -191,26 +186,25 @@ export default function Home() {
               Banda de Música Sons da Aratanha
             </h1>
             <p>
-              A banda de música &quot;Sons da Aratanha&quot;, sob a orientação
-              do talentoso Maestro Paulo Ferreira, é um exemplo notável de
-              colaboração e expressão musical, composta por alunos, voluntários
-              e professores da OSCIP Soarte, localizada no município de
-              Pacatuba, no Ceará. Mestre em música pela renomada UFBA
-              (Universidade Federal da Bahia), o Maestro Paulo Ferreira traz
-              consigo uma expertise valiosa que enriquece a experiência musical
-              da banda. Uma manifestação vibrante da dedicação à música e ao
-              crescimento comunitário, essa banda é uma das várias oficinas
-              enriquecedoras que a OSCIP oferece à comunidade. A diversidade
-              instrumental é o que dá vida à música dos &quot;Sons da
-              Aratanha&quot;, abrangendo uma ampla gama de categorias sonoras.
-              Madeiras como clarinetes, flautas e saxofones, metais como
-              trompetes e trombones, sopros como bombardinos e tubas, e uma
-              variedade de instrumentos de percussão se unem harmoniosamente
-              para criar uma sinfonia rica e cativante. Essa colaboração musical
-              não apenas proporciona um ambiente educativo enriquecedor, mas
-              também reforça os laços sociais e culturais dentro da comunidade,
-              tornando &quot;Sons da Aratanha&quot; um exemplo inspirador de
-              como a música pode unir e transformar vidas.
+              A Banda de Música Sons da Aratanha, sob a orientação do talentoso
+              Maestro Paulo Ferreira, é um exemplo notável de colaboração e
+              expressão musical, composta por alunos, voluntários e professores
+              da OSCIP Soarte, localizada no município de Pacatuba, no Ceará.
+              Mestre em música pela renomada UFBA (Universidade Federal da
+              Bahia), o Maestro Paulo Ferreira traz consigo uma expertise
+              valiosa que enriquece a experiência musical da banda. Uma
+              manifestação vibrante da dedicação à música e ao crescimento
+              comunitário, essa banda é uma das várias oficinas enriquecedoras
+              que a OSCIP oferece à comunidade. A diversidade instrumental é o
+              que dá vida à música dos Sons da Aratanha, abrangendo uma ampla
+              gama de categorias sonoras. Madeiras como clarinetes, flautas e
+              saxofones, metais como trompetes e trombones, sopros como
+              bombardinos e tubas, e uma variedade de instrumentos de percussão
+              se unem harmoniosamente para criar uma sinfonia rica e cativante.
+              Essa colaboração musical não apenas proporciona um ambiente
+              educativo enriquecedor, mas também reforça os laços sociais e
+              culturais dentro da comunidade, tornando Sons da Aratanha um
+              exemplo inspirador de como a música pode unir e transformar vidas.
             </p>
           </div>
         </div>
