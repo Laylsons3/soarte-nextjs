@@ -1,72 +1,68 @@
-import Image from 'next/image';
-import { Popover } from '@headlessui/react'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import Image from "next/image";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { useRef } from "react";
 
-function Galeria() {
+export default function Galeria() {
+  const carousel = useRef(null);
 
   const images = [
-    {
-      path: '/images/galeria/img1.jpg',
-      width: 1600,
-      height: 1070
-    },{
-      path: '/images/galeria/img2.jpg',
-      width: 960,
-      height: 642
-    },{
-      path: '/images/galeria/img3.jpg',
-      width: 960,
-      height: 642
-    },{
-      path: '/images/galeria/img4.jpg',
-      width: 960,
-      height: 642
-    },{
-      path: '/images/galeria/img5.jpg',
-      width: 960,
-      height: 642
-    },{
-      path: '/images/galeria/img6.jpg',
-      width: 960,
-      height: 720
-    },{
-      path: '/images/galeria/img7.jpg',
-      width: 720,
-      height: 960
-    },
-  ]
+    "/images/galeria/img1.jpg",
+    "/images/galeria/img2.jpg",
+    "/images/galeria/img3.jpg",
+    "/images/galeria/img4.jpg",
+    "/images/galeria/img5.jpg",
+    "/images/galeria/img6.jpg",
+    "/images/galeria/img7.jpg",
+  ];
+  const handleRightClick = (e) => {
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+    e.preventDefault();
+  };
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  };
 
-  return(
-    <section id="galeria">
-      <div className='Component'>
-        <div className='bg-slate-800 py-8 px-3 relative rounded-lg'>
-          <h1 className='text-white text-center text-3xl mb-8'>Imagens</h1>
-          <div className='flex gap-2'>
-            {images.map((image => (
-              <Popover key={image.path} className=''>
-              <Popover.Button>
-                <div>
-                  <Image className='rounded-md object-cover hover:scale-110 transition-transform' src={image.path} width={260} height={180} alt="Imagem Galeria" />
+  return (
+    <section
+      id="section-1"
+      className="bg-teal-700 flex justify-center items-center w-full h-screen"
+    >
+      <div className="w-3/4 h-full text-teal-100 flex flex-col">
+        <h1 className="font-extrabold text-center text-3xl my-8">Galeria</h1>
+        <div className="flex items-center gap-x-4">
+          <button
+            onClick={handleLeftClick}
+            className="hover:bg-black/40 rounded-full p-2 flex items-center justify-center"
+          >
+            <AiOutlineLeft size={25} />
+          </button>
+          <div
+            ref={carousel}
+            id="carousel"
+            className="flex gap-x-4 scroll-smooth overflow-x-hidden"
+          >
+            {images.map((image, index) => (
+              <div className="flex-none w-80 h-80 relative" key={index}>
+                <div className="w-full object-cover">
+                  <Image
+                    className="object-cover"
+                    src={image}
+                    layout="fill"
+                    alt="image"
+                  />
                 </div>
-              </Popover.Button>
-
-              <Popover.Panel className=" absolute right-0 left-0 -top-28 z-10 w-full h-full">
-                <div className='bg-[#000000bb] rounded-lg p-4 overflow-auto w-full z-50 flex justify-center relative'>
-                  <Image className='absolute' src={image.path} width={image.width} height={image.height} alt="Imagem Galeria" />
-                  <div className='flex text-white items-start text-right'>
-                    <Popover.Button className='absolute top-0 right-0 m-4'>
-                      <AiFillCloseCircle className='w-8 h-8' />
-                    </Popover.Button>
-                  </div>
-                </div>
-              </Popover.Panel>
-            </Popover>
-            )))}
+              </div>
+            ))}
           </div>
+          <button
+            onClick={handleRightClick}
+            className="hover:bg-black/40 rounded-full p-2 flex items-center justify-center"
+          >
+            <AiOutlineRight size={25} />
+          </button>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-export default Galeria;

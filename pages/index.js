@@ -2,8 +2,8 @@ import Head from "next/head";
 import LogoBranco from "../components/LogoBranco";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import Galeria from "../components/Galeria";
+import TypingText from "../components/TypingText";
 
 export default function Home() {
   const menu = [
@@ -14,26 +14,50 @@ export default function Home() {
     { name: "Contato", src: "#section-4" },
   ];
 
-  const carousel = useRef(null);
-
-  const images = [
-    "/images/galeria/img1.jpg",
-    "/images/galeria/img2.jpg",
-    "/images/galeria/img3.jpg",
-    "/images/galeria/img4.jpg",
-    "/images/galeria/img5.jpg",
-    "/images/galeria/img6.jpg",
-    "/images/galeria/img7.jpg",
+  const professores = [
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
+    {
+      name: "Paulo Ferreira",
+      image: "/images/paulo.jpg",
+      description:
+        "Mestrando em Interpretação Musical pela UFBA, Especialização em Performance Musical nos Alpes no sul da França",
+      title: "Professor de Flauta Transversal e Maestro...",
+    },
   ];
-
-  const handleRightClick = (e) => {
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
-    e.preventDefault();
-  };
-  const handleLeftClick = (e) => {
-    e.preventDefault();
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  };
 
   return (
     <div>
@@ -66,53 +90,16 @@ export default function Home() {
             <div className="absolute bottom-0 right-0 left-0">
               <div className="flex w-full justify-center mb-16">
                 <h1 className="text-5xl font-bold text-white">
-                  HÁ 12 ANOS TRANSFORMANDO VIDAS ATRAVÉS DA ARTE.
+                  HÁ 12 ANOS TRANSFORMANDO VIDAS ATRAVÉS DA ARTE!
                 </h1>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <section
-        id="section-1"
-        className="bg-teal-700 flex justify-center items-center w-full h-screen"
-      >
-        <div className="w-3/4 h-full text-teal-100 flex flex-col">
-          <h1 className="font-extrabold text-center text-3xl my-8">Galeria</h1>
-          <div className="flex items-center gap-x-4">
-            <button
-              onClick={handleLeftClick}
-              className="hover:bg-black/40 rounded-full p-2 flex items-center justify-center"
-            >
-              <AiOutlineLeft size={25} />
-            </button>
-            <div
-              ref={carousel}
-              id="carousel"
-              className="flex gap-x-4 scroll-smooth overflow-x-hidden"
-            >
-              {images.map((image, index) => (
-                <div className="flex-none w-80 h-80 relative" key={index}>
-                  <div className="w-full object-cover">
-                    <Image
-                      className="object-cover"
-                      src={image}
-                      layout="fill"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <button
-              onClick={handleRightClick}
-              className="hover:bg-black/40 rounded-full p-2 flex items-center justify-center"
-            >
-              <AiOutlineRight size={25} />
-            </button>
-          </div>
-        </div>
-      </section>
+
+      <Galeria />
+
       <section
         id="section-2"
         className="bg-quem-somos bg-fixed bg-no-repeat bg-cover bg-center w-full h-screen"
@@ -159,13 +146,13 @@ export default function Home() {
       <section id="section-3" className="bg-teal-400 w-full h-screen">
         <div className="flex flex-col gap-y-6 justify-center items-center w-full h-full text-teal-900">
           <h1 className="text-3xl font-extrabold">Recital de Natal</h1>
-          <div className="flex shadow shadow-gray-500">
+          <div className="flex shadow-lg shadow-zinc-800/60 rounded">
             <Image
-              src="/images/capa-geral.jpg"
+              src="/images/bg-2.png"
               width={1200}
               height={400}
               alt="Foto Recital"
-              className="object-cover rounded "
+              className="object-cover rounded"
             />
           </div>
           <div>
@@ -213,11 +200,86 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="section-5" className="bg-teal-900 w-full h-screen">
-        <div className="flex justify-center items-center w-full h-full text-teal-100">
-          <div className="flex flex-col">
-            <h1 className="text-4xl font-extrabold">Nossa equipe & Contato</h1>
-            <p>[...]</p>
+      <section id="section-5" className="bg-teal-900 w-full h-full">
+        <div className="flex flex-col items-center py-10 w-full h-full text-teal-100">
+          <div className="flex flex-col gap-y-8 items-center">
+            <h1 className="text-4xl font-extrabold mb-4 w-full text-center">
+              Nossa equipe
+            </h1>
+            <div className="flex gap-x-4">
+              <div className="grid grid-cols-3 bg-black/30 max-w-xs">
+                <Image
+                  src="/images/paulo.jpg"
+                  width={20}
+                  height={120}
+                  alt="Foto Paulo"
+                  className="object-cover rounded"
+                />
+                <div className="p-2 col-span-2">
+                  <h2 className="font-bold">Presidente</h2>
+                  <h3 className="text-sm font-bold">Paulo Ferreira da Costa</h3>
+                  <p className="text-xs">
+                    Mestrando em Interpretação Musical pela UFBA, Especialização
+                    em Performance Musical nos Alpes no sul da França
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 bg-black/30 max-w-xs">
+                <Image
+                  src="/images/paulo.jpg"
+                  width={20}
+                  height={120}
+                  alt="Foto Paulo"
+                  className="object-cover rounded"
+                />
+                <div className="p-2 col-span-2">
+                  <h2 className="font-bold">Presidente</h2>
+                  <h3 className="text-sm font-bold">Paulo Ferreira da Costa</h3>
+                  <p className="text-xs">
+                    Mestrando em Interpretação Musical pela UFBA, Especialização
+                    em Performance Musical nos Alpes no sul da França
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h1 className="text-4xl font-extrabold mb-4">Professores</h1>
+            <div className="grid grid-cols-4 gap-4 items-center">
+              {professores.map(({ name, image, description, title }, index) => (
+                <div
+                  key={index}
+                  className="grid grid-cols-3 bg-black/30 max-w-xs"
+                >
+                  <Image
+                    src={image}
+                    width={20}
+                    height={120}
+                    alt="Foto Paulo"
+                    className="object-cover rounded"
+                  />
+                  <div className="p-2 col-span-2">
+                    <h3 className="font-bold">{name}</h3>
+                    <h2 className="text-sm font-bold">{title}</h2>
+                    <p className="text-xs">{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="mt-8">
+            <h1 className="text-4xl font-extrabold text-center py-4">
+              Contato
+            </h1>
+            <div className="text-center">
+              <Link
+                target="_blank"
+                rel="nofollow"
+                href="https://web.whatsapp.com/send?phone=5585991292607"
+              >
+                <span className="hover:underline cursor-pointer">
+                  {"Abrir WhatsApp (85) 9 9129-2607"}
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
